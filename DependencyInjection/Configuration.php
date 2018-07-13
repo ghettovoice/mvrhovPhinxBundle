@@ -77,6 +77,7 @@ class Configuration implements ConfigurationInterface
                                 })
                             ->end()
                             ->children()
+                                ->scalarNode('dsn')->end()
                                 ->scalarNode('adapter')->end()
                                 ->scalarNode('name')->end()
                                 ->scalarNode('host')->defaultValue('localhost')->end()
